@@ -9,6 +9,8 @@ body {
   
 }
 .container {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   margin: 0 auto;
   width: 94%;
@@ -111,9 +113,10 @@ h3{
   border-bottom: 5px solid #4aaaa5;
 }
 .wrapper {
-	height: 500px;
+	height: 610px;
   /*height:50%;*/
 	width: 1100px;
+  max-width: 100%;
   /*width:100%;
 	/*background: #777;*/
 	/*text-align: center;*/
@@ -281,31 +284,19 @@ footer {
 	margin-bottom: 100px;
 }
 
+  
+
 @media screen and (max-width: 960px){
-  /*.container{
-    width: 100%;
-  }
-  .wrapper{
-    width: 100%;
-  }
-  .content{
-    width: 100%;
-  }
-  #header{
-    width: 100%;
-  }*/
+  
   .wrapper{
     width:100%;
     margin-left: auto;
     margin-right: auto;
   }
   section{
-    width: 45%;
+   height:610px;
   }
-  aside{
-    width: 28%;
-    margin-left: 0;
-  }
+  
   #mypic{
     width:75%;
     height:45%;
@@ -316,8 +307,11 @@ footer {
   .article{
     width:100%;
     display: block;
+    height: 610px;
+    font-size: 0.85em;
     overflow: auto
   }
+  
   }
 
 @media screen and (max-width: 768px){
@@ -345,7 +339,7 @@ footer {
     height:820px;
   }
   section{
-    width: 94%;
+    width: 97%;
     height: 610px;
   }
   .article{
@@ -354,13 +348,15 @@ footer {
     margin-bottom: 5px;
   }
   aside{
-    float: none;
+  
     display: block;
-    width: 94%;
-    height: 200px;
+    width: 100%;
+    height: 180px;
     margin-bottom: 10px;
     background: #ffffff;
     z-index: 3;
+    margin-top: 2%;
+    padding: 2%
   }
 
   }
@@ -372,6 +368,7 @@ footer {
   }
   .container{
     max-width: 100%;
+    height: 100px;
   }
   .content{
     width: 100%;
@@ -381,30 +378,35 @@ footer {
   }
   #header h1{
     width: 100%;
-    
+    height: 50px;
     position: static;
-    font-size: 0.8em
+    font-size: 0.8em;
+    padding-bottom: 1.5%;
    
   }
   #header nav{
-    position: relative;
+    /*position: relative;*/
     display: block;
    width:100%;
+   height: 50px;
     padding: 10px;
-    font-size: 0.8em
-    
+    font-size: 0.8em;
+    top:0;
+
+    left:25%;
   }
   section{
-    width: 94%;
+    width: 97%;
   }
   .article{
-    width: 94%;
+    width: 97%;
 
     font-size: 0.8em
   }
   aside{
-    width: 94%;
-    height:35%;
-    font-size: 0.8em
+    width: 97%;
+    height:30%;
+    font-size: 0.8em;
+    float: left;
   }
   }
